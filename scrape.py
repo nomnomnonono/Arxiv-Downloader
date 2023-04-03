@@ -3,7 +3,6 @@ import time
 
 import arxiv
 import yaml
-from omegaconf import OmegaConf
 from tqdm import tqdm
 
 
