@@ -1,0 +1,5 @@
+base_dir: data
+before: '20230301000000'
+max_results: 1000
+query: 'ti: fairness AND (cat:cs.LG OR cat:cs.AI OR cat:cs.CV)'
+tag: fairness
