@@ -1,4 +1,5 @@
 import datetime
+import os
 import time
 
 import arxiv
@@ -16,7 +17,7 @@ def scrape_paper(config):
     )
 
     for result in tqdm(search.results()):
-        result.download_pdf(dirpath=config.base_dir)
+        result.download_pdf(dirpath=os.path.join(config.base_dir, config.tag))
         time.sleep(10)
 
     return config
