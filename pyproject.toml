@@ -6,6 +6,11 @@ authors = ["nomnomnonono <murumuru1204@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+arxiv = "^1.4.3"
+omegaconf = "^2.3.0"
+notebook = "^6.5.3"
+tqdm = "^4.65.0"
+PyYAML = "^6.0"
 
 [tool.poetry.dev-dependencies]
 pysen = {version = "0.10.3", extras = ["lint"]}
