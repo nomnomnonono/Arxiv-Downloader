@@ -19,7 +19,7 @@ def argparser() -> argparse.Namespace:
 
 def main(args):
     config = OmegaConf.load(args.config)
-    os.makedirs(config.base_dir, exist_ok=True)
+    os.makedirs(os.path.join(config.base_dir, config.tag), exist_ok=True)
     config = scrape_paper(config)
     save_config(config, args.config)
 
